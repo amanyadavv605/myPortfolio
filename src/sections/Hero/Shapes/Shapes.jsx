@@ -14,7 +14,7 @@ export default function Shapes() {
         far={40}
       />
 
-      <Environment files="/smallroom.hdr" format="hdr"/>
+      <Environment files="./smallroom.hdr" format="hdr"/>
 
 
       <ContactShadows position={[0, -1.8, 0]} opacity={0.65} scale={10} blur={1} far={2.6} />

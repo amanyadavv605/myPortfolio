@@ -16,9 +16,9 @@ export default function Geometry({
   );
 
   const soundEffects = [
-    new Audio('/sounds/hit1.ogg'),
-    new Audio('/sounds/hit2.ogg'),
-    new Audio('/sounds/hit3.ogg')
+    new Audio('./sounds/hit1.ogg'),
+    new Audio('./sounds/hit2.ogg'),
+    new Audio('./sounds/hit3.ogg')
   ]
 
   const materialParams = [
