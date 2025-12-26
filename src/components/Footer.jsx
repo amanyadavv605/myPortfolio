@@ -36,7 +36,7 @@ export default function Footer() {
               <React.Fragment key={label}>
                 <li>
                   <a
-                    href="#"
+                    href={`/${label.toLowerCase()}`}
                     className="block px-3 py-1 text-base font-bold text-slate-100 transition-colors duration-150 hover:text-yellow-400"
                   >
                     {label}

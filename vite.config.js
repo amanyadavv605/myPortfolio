@@ -8,5 +8,4 @@ export default defineConfig({
     noExternal: ["three"],
   },
   plugins: [react(), tailwindcss()],
-  base: '/myPortfolio/'
 });
