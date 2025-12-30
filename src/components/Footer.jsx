@@ -32,7 +32,7 @@ export default function Footer() {
         {/* Navigation */}
         <nav aria-label="Footer Navigation">
           <ul className="flex items-center gap-1">
-            {["Projects", "About", "Contact"].map((label, index, arr) => (
+            {["About", "Projects", "Contact"].map((label, index, arr) => (
               <React.Fragment key={label}>
                 <li>
                   <a

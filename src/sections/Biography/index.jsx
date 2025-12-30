@@ -38,7 +38,7 @@ export default function Biography() {
         </div>
 
         {/* Button */}
-        <Button href="/contact" label="Get in Touch" />
+        <Button onClick={() => window.location.href = "/contact"} label="Get in Touch" />
 
         {/* Avatar */}
         <Avatar

@@ -7,12 +7,21 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { label: "Projects", href: "/projects" },
     { label: "About", href: "/about" },
+    { label: "Projects", href: "/projects" },
     { label: "Contact", href: "/contact" },
   ];
 
   const onLinkClick = () => setOpen(false);
+
+  // inside Header()
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = "/download-Resume.pdf";
+  link.download = "download-Resume.pdf";
+  link.click();
+};
+
 
   return (
     <header className="relative top-0 z-50 mx-auto max-w-7xl md:sticky md:top-4">
@@ -71,7 +80,7 @@ export default function Header() {
 
             {/* CTA Button (Mobile) */}
             <Button
-              href="/resume"
+              onClick={downloadResume}
               label="Resume"
               className="mt-6"
             />
@@ -92,7 +101,7 @@ export default function Header() {
 
             {/* CTA Button (Desktop) */}
             <Button
-              href="/resume"
+              onClick={downloadResume}
               label="Resume"
               className="ml-3"
             />

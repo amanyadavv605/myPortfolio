@@ -34,8 +34,7 @@ export default function Geometry({
   const meshMaterial = [
     new THREE.MeshStandardMaterial(gsap.utils.random(materialParams)),
     new THREE.MeshPhysicalMaterial(gsap.utils.random(materialParams)),
-    new THREE.MeshStandardMaterial(gsap.utils.random(materialParams)),
-    new THREE.MeshNormalMaterial(gsap.utils.random(materialParams))
+    new THREE.MeshNormalMaterial()
   ];
 
   function getRandomMaterial() {
