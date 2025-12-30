@@ -16,10 +16,10 @@ export default function Geometry({
   );
 
   const soundEffects = [
-    new Audio('./sounds/hit1.ogg'),
-    new Audio('./sounds/hit2.ogg'),
-    new Audio('./sounds/hit3.ogg')
-  ]
+    new Audio("./sounds/hit1.ogg"),
+    new Audio("./sounds/hit2.ogg"),
+    new Audio("./sounds/hit3.ogg"),
+  ];
 
   const materialParams = [
     { color: 0x2ecc71, roughness: 0 },
@@ -31,8 +31,15 @@ export default function Geometry({
     { color: 0x2c3e50, roughness: 0.1, metalness: 0.5 },
   ];
 
+  const meshMaterial = [
+    new THREE.MeshStandardMaterial(gsap.utils.random(materialParams)),
+    new THREE.MeshPhysicalMaterial(gsap.utils.random(materialParams)),
+    new THREE.MeshStandardMaterial(gsap.utils.random(materialParams)),
+    new THREE.MeshNormalMaterial(gsap.utils.random(materialParams))
+  ];
+
   function getRandomMaterial() {
-    return new THREE.MeshStandardMaterial(gsap.utils.random(materialParams));
+    return gsap.utils.random(meshMaterial);
   }
 
   useEffect(() => {
@@ -46,7 +53,7 @@ export default function Geometry({
         y: 1,
         z: 1,
         duration: 1.5,
-        ease: "elastic.out(1, 0.3)"
+        ease: "elastic.out(1, 0.3)",
       }
     );
     return () => {
