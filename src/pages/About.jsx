@@ -2,6 +2,7 @@ import React from 'react'
 import Biography from '../sections/Biography/index.jsx'
 import TechList from '../sections/TechList/index.jsx'
 import Experience from '../sections/Experience/index.jsx'
+import Education from '../sections/Education/index.jsx'
 
 export default function About() {
   return (
@@ -9,6 +10,7 @@ export default function About() {
     <Biography />
     <TechList />
     <Experience />
+    <Education />
     </>
   )
 }
