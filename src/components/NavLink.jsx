@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavLink({
   href = "/",
@@ -25,8 +25,8 @@ export default function NavLink({
       : "translate-y-16";
 
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       onClick={onLinkClick}
       aria-current={isActive ? "page" : undefined}
       className={`${baseClasses} ${
@@ -40,6 +40,6 @@ export default function NavLink({
 
       {/* Label */}
       <span className="relative">{label}</span>
-    </a>
+    </Link>
   );
 }
