@@ -73,7 +73,7 @@ This portfolio serves as:
 
 -  LinkedIn: https://linkedin.com/in/aman-yadav-8558721b3
 
--  Portfolio: (live link if deployed)
+-  Portfolio: https://my-portfolio-amanydv.vercel.app/
 
 ---
 
